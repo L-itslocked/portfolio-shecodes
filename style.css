@@ -46,6 +46,17 @@ img {
   padding: 7px;
   margin-top: 25%;
 }
+
+footer {
+  font-size: 9px;
+  text-align: right;
+  background-color: var(--primary-color);
+  color: black;
+  padding: 10px 20px;
+  margin-top: 200px;
+  margin-left: 65%;
+  border-radius: 4px;
+}
 @media (max-width: 500px) {
   .container .col-md-6 img {
     display: none;
