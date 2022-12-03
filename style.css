@@ -42,11 +42,10 @@ p {
 }
 img {
   border-radius: 4px;
-  background: white;
+  background: var(--secondary-color);
   padding: 7px;
-  margin-top: 25%;
+  margin: 0 auto;
 }
-
 footer {
   font-size: 9px;
   text-align: right;
@@ -57,30 +56,24 @@ footer {
   margin-left: 65%;
   border-radius: 4px;
 }
-@media (min-width: 501px) {
-  .about-imgs {
-    display: inline-block;
-    margin: 0 auto;
-  }
+.hero {
+  margin-bottom: 100px;
 }
-@media (max-width: 500px) {
-  .container .col-md-6 img {
-    display: none;
-  }
-  img {
-    margin: 10px 5px;
-  }
-  .btn-link {
-    display: block;
     margin: 0 50px 0;
-    text-align: center;
-  }
-
-  .about-imgs {
-    display: block;
-    margin: 0 auto;
-  }
+.container {
+  margin-bottom: 100px;
 }
+.homepage-appinfo {
+  display: inline-block;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+.about-paragraphs p {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -123,12 +116,12 @@ footer {
 }
 
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
 }
 
 .about-paragraphs p {
   margin: 10px;
+  font-size: 15px;
 }
 
 .email-link {
@@ -160,4 +153,52 @@ footer {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border: solid 1px var(--primary-color);
+}
+
+@media (min-width: 900px) {
+  .btn-link {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 501px) {
+  .about-imgs {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    margin: 0 auto;
+    display: block;
+  }
+  img {
+    margin: 10px 5px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .container .col-md-6 img {
+    display: none;
+  }
+
+  .btn-link {
+    display: block;
+    margin: 0 32px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .about-imgs {
+    display: block;
+    margin: 0 auto;
+  }
 }
